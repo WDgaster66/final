@@ -1,0 +1,164 @@
+/* Style the container element */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  color: #3F2860;
+  background-color: #FFFFFF;
+  min-width: 550px;
+  max-width: 1280px;
+}
+body { 
+  font-family: Verdana, Arial, sans-serif; background-color: #960CE8;
+  color: #3F2860;
+}
+
+/* Style the header element */
+header {
+  background-color: #960CE8; /* Purple background color */
+  color: #FFFFFF; /* White text color */
+  padding: 20px; /* Some padding */
+  text-align: center; /* Center the text */
+}
+
+/* Style the navigation bar */
+nav {
+  background: linear-gradient(to right, #960CE8, #DB0CF2, #960CE8); /* Add a purple gradient background */
+  margin-top: 0px; /* Add some margin above the navigation bar */
+}
+
+/* Style the navigation bar list */
+nav ul {
+  list-style-type: none; /* Remove list bullets */
+  margin: 0; /* Remove margins */
+  padding: 0; /* Remove padding */
+  display: flex; /* Use flexbox to arrange the list items */
+  justify-content: space-evenly; /* Distribute the items evenly along the line */
+}
+
+/* Style the navigation bar links */
+nav a {
+  display: block; /* Make the links take up the whole space of the list items */
+  color: #FFFFFF; /* White text color */
+  text-decoration: none; /* Remove underline */
+  padding: 10px; /* Some padding */
+  border: none; /* Remove border */
+}
+
+/* Change the background color of the links on hover */
+nav a:hover {
+  background: linear-gradient(to right, #DB0CF2, #960CE8); /* Reverse the gradient direction on hover */
+}
+
+
+
+/* Style the main content element */
+main {
+  padding: 20px; /* Some padding */
+}
+
+/* Style the main content heading */
+main h2 {
+  color: #000000; /* Black text color */
+}
+
+/* Add image to top bar */
+header {
+  background-image: url(topbar.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-color: #960CE8;
+  height: 120px;
+}
+
+/* Style the h1 element */ 
+h1 { 
+  color: #000000; /* Set the font color to black */ 
+}
+
+/* Style the p element */ 
+body p { 
+  color: #FFFFFF; /* Set the font color to black */ 
+  padding: 10px; /* Some padding */
+}
+
+/* Style the image element */
+img {
+  width: 100%; /* Make the image take up the full width of its container */
+}
+
+/* Style the footer element */
+footer {
+  background-color: #960CE8; /* Purple background color */
+  color: #FFFFFF; /* White text color */
+  padding: 10px; /* Some padding */
+  text-align: center; /* Center the text */
+  margin-top: 20px; /* Add some margin above the footer */
+}
+
+
+
+/* Use media queries to make the layout responsive for mobile devices */
+
+/* For small/large screens (min-width/max-width of 600px) */
+@media screen and (max-width: 600px) {
+
+  /* Make the navigation bar vertical instead of horizontal */
+  nav ul {
+    display: flex; /* Use flexbox to arrange the list items vertically */
+    flex-direction: column; /* Stack the list items on top of each other */
+    align-items: center; /* Center the list items horizontally */
+  }
+
+}
+
+@media screen and (min-width: 601px) {
+  
+  nav ul {
+    justify-content: space-evenly; /* Make the menu horizontal */
+    
+  }
+}
+
+
+/* Style the form element */
+    form {
+      display: grid; /* Use a grid layout */
+      grid-template-columns: repeat(2, 1fr); /* Create two columns */
+      grid-gap: 10px; /* Add some space between grid items */
+      max-width: 600px; /* Set a maximum width for the form */
+    }
+
+    /* Style the label elements */
+    label {
+      font-weight: bold; /* Make the text bold */
+    }
+
+    /* Style the input and textarea elements */
+    input, textarea {
+      border: 1px solid gray; /* Add a border */
+      padding: 5px; /* Add some padding */
+    }
+
+    /* Style the submit button */
+    input[type="submit"] {
+      grid-column: span 2; /* Make it span two columns */
+      background-color: #F20C36; /* Set a background color */
+      color: #FFFFFF; /* Set a text color */
+      cursor: pointer; /* Change the cursor to a pointer */
+    }
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+  }
+  th {
+    background-color: lightblue;
+    border: 1px solid black;
+    padding: 10px;
+  }
+  td {
+    border: 1px solid black;
+    padding: 10px;
+  }

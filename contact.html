@@ -1,0 +1,77 @@
+<!-- HOA website
+       Author: Josiah Boyer
+       Date: 4/30/23 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Higley HOA :: Contact</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="x.css">
+  <html style="font-size: 1.3em;">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Higley HOA</h1>
+    </header>
+    <!-- Create menu bar -->
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="calendar.html">Calendar</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- Main content/Body of the website -->
+    <main>
+      <h2><center>Higley HOA Contact Form</center></h2>
+      <p>Required information is marked with an asterisk *.</p>
+      <img src="gen2.png" alt="AI generated image of Arizona houses" style="float: right; margin-right: 75px; max-width: 25%; max-height: 25%;">
+    <!-- form element -->
+<form method="post" action="process.php" onsubmit="return thankYou()"> 
+  <!-- name input -->
+  <label for="myName">* Name:</label>
+  <input type="text" name="myName" id="myName" required placeholder="John Smith"> 
+  <!-- email input -->
+  <label for="myEmail">* Email:</label>
+  <input type="email" name="myEmail" id="myEmail" required placeholder="john.smith@example.com">
+  <!-- hear about us input, yes -->
+  <label for="contactReason">* Contact reason:</label>
+  <input type="text" name="contactReason" id="contactReason" list="contactReasonList"> 
+  <!-- hear about us options -->
+  <datalist id="contactReasonList"> 
+    <option>Google</option> 
+    <option>Bing</option> 
+    <option>Facebook</option> 
+    <option>Friend</option>
+  </datalist> 
+  <!-- phone input -->
+  <label for="myPhone">Phone:</label>
+  <!-- regex pattern to verify proper syntax -->
+  <input type="tel" name="myPhone" id="myPhone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="555-555-5555"> 
+  <!-- address input -->
+  <label for="myAddress">Address:</label>
+  <input type="text" name="myAddress" id="myAddress" placeholder="123 Main Street"> 
+  <!-- comments input -->
+  <label for="myComments">* Comments:</label> 
+  <textarea name="myComments" id="myComments" rows="2" cols="20" required placeholder="Your message here">
+  </textarea> 
+  <!-- submit button -->
+  <input type="submit" value="Send Now"> 
+</form>
+<!-- form sumbission verification -->
+<script> 
+  function thankYou() { alert("Thank you for contacting us. We will get back to you soon."); return false; } 
+</script>
+<!-- Footer -->
+  <footer>
+    <p>
+      © 2023 Boyer Inc. All rights reserved.
+    </p>
+  </footer>
+</div>
+</body>
+</html>
