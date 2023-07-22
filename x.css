@@ -162,3 +162,52 @@ table {
     border: 1px solid black;
     padding: 10px;
   }
+
+/* Hide the images by default */
+#image-container img {
+  display: none;
+}
+
+/* Show the first image by default */
+#image-container img:first-child {
+  display: block;
+}
+
+/* Style the buttons */
+#prev-button, #next-button {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -25px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  background: rgba(0,0,0,0.5);
+  color: white;
+}
+
+/* Position the prev button to the left */
+#prev-button {
+  left: 0;
+}
+
+/* Position the next button to the right */
+#next-button {
+  right: 0;
+}
+
+/* Style the dots */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+}
+
+/* Highlight the active dot */
+.dot.active {
+  background-color: #717171;
+}
+
