@@ -17,10 +17,10 @@ button.addEventListener("click", function() {
 });
 
 // Select the video, the slider, and the span elements
-var video = document.getElementById("movie"); 
-var button = document.getElementById("mute-button");
-var slider = document.getElementById("speed-slider"); 
-var span = document.getElementById("speed-value");
+const video = document.getElementById("movie"); 
+const button = document.getElementById("mute-button");
+const slider = document.getElementById("speed-slider"); 
+const span = document.getElementById("speed-value");
 
 // Use let for variables that may change
 let speed = slider.value;
