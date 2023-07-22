@@ -1,6 +1,6 @@
 // Select the video and the button elements 
-var video = document.getElementById("movie"); 
-var button = document.getElementById("mute-button");
+const video = document.getElementById("movie"); 
+const button = document.getElementById("mute-button");
 
 // Add a click event listener to the button 
 button.addEventListener("click", function() { 
