@@ -1,6 +1,6 @@
 // Select the video and the button elements 
-const video = document.getElementById("movie"); 
-const button = document.getElementById("mute-button");
+var video = document.getElementById("movie"); 
+var button = document.getElementById("mute-button");
 
 // Add a click event listener to the button 
 button.addEventListener("click", function() { 
@@ -16,12 +16,11 @@ button.addEventListener("click", function() {
   } 
 });
 
-// Select the video, the slider, and the span elements 
-// Use const for variables that will not change
-const video = document.getElementById("movie"); 
-const button = document.getElementById("mute-button");
-const slider = document.getElementById("speed-slider"); 
-const span = document.getElementById("speed-value");
+// Select the video, the slider, and the span elements
+var video = document.getElementById("movie"); 
+var button = document.getElementById("mute-button");
+var slider = document.getElementById("speed-slider"); 
+var span = document.getElementById("speed-value");
 
 // Use let for variables that may change
 let speed = slider.value;
