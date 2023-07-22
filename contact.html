@@ -1,6 +1,4 @@
-<!-- HOA website
-       Author: Josiah Boyer
-       Date: 4/30/23 -->
+<!-- HOA website by Josiah Boyer -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,7 +37,7 @@
   <label for="myEmail">* Email:</label>
   <input type="email" name="myEmail" id="myEmail" required placeholder="john.smith@example.com">
   <!-- hear about us input, yes -->
-  <label for="contactReason">* Contact reason:</label>
+  <label for="contactReason">Contact reason:</label>
   <input type="text" name="contactReason" id="contactReason" list="contactReasonList"> 
   <!-- hear about us options -->
   <datalist id="contactReasonList"> 
@@ -49,14 +47,14 @@
     <option>Friend</option>
   </datalist> 
   <!-- phone input -->
-  <label for="myPhone">Phone:</label>
+  <label for="myPhone">* Phone:</label>
   <!-- regex pattern to verify proper syntax -->
-  <input type="tel" name="myPhone" id="myPhone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="555-555-5555"> 
+  <input type="tel" name="myPhone" id="myPhone" placeholder="555-555-5555"> 
   <!-- address input -->
-  <label for="myAddress">Address:</label>
+  <label for="myAddress">* Address:</label>
   <input type="text" name="myAddress" id="myAddress" placeholder="123 Main Street"> 
   <!-- comments input -->
-  <label for="myComments">* Comments:</label> 
+  <label for="myComments">Comments:</label> 
   <textarea name="myComments" id="myComments" rows="2" cols="20" required placeholder="Your message here">
   </textarea> 
   <!-- submit button -->
@@ -64,7 +62,7 @@
 </form>
 <!-- form sumbission verification -->
 <script> 
-  function thankYou() { alert("Thank you for contacting us. We will get back to you soon."); return false; } 
+  function thankYou() { alert("Thank you for contacting us. We will NOT get back to you soon. :)"); return false; } 
 </script>
 <!-- Footer -->
   <footer>
